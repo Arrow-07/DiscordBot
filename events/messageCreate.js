@@ -4,6 +4,7 @@ module.exports = {
     execute(message) {
       
         if(message.content.includes("https://") || message.content.includes("http://")) {
+            if(message.member.permissions.has('ADMINISTRATOR')){return}
             var testo = message.content;
             message.delete()
             var embed = new Discord.MessageEmbed()
@@ -14,6 +15,7 @@ module.exports = {
                 .setTimestamp()
         
            message.author.send({ embeds: [embed] })
+        
         }
           
     }
