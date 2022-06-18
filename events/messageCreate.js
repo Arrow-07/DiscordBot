@@ -4,13 +4,11 @@ module.exports = {
     execute(message) {
       
         if(message.content.includes("https://") || message.content.includes("http://")) {
-            if(message.member.permissions.has('ADMINISTRATOR')){
-                return
-            }
+            if(message.member.permissions.has('ADMINISTRATOR')){return}
             var testo = message.content;
             message.delete()
             var embed = new Discord.MessageEmbed()
-                .setTitle(":x: **INFRAZIONE**, motivo:")
+                .setTitle(":x: **INFRAZIONE**")
                 .setColor("RED")
                 .setDescription(`**\n${testo}**`)
                 .addField(':warning: non puoi mandare link nel server stai piu attento la prossima volta 🙂')
