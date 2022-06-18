@@ -11,7 +11,7 @@ module.exports = {
                 .setTitle(":x: **INFRAZIONE**")
                 .setColor("RED")
                 .setDescription(`**\n${testo}**`)
-                .addField(':warning: non puoi mandare link nel server stai piu attento la prossima volta 🙂')
+                .addField(':warning: non puoi mandare link nel server stai piu attento la prossima volta 🙂', '@here', false )
                 .setTimestamp()
         
            message.author.send({ embeds: [embed] })
