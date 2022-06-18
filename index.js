@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 global.client = new Discord.Client({ intents: ['DIRECT_MESSAGES', 'DIRECT_MESSAGE_TYPING', 'DIRECT_MESSAGE_REACTIONS', 'GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS', 'GUILD_BANS', 'GUILD_EMOJIS_AND_STICKERS', 'GUILD_INTEGRATIONS', ], partials: ['MESSAGE', 'CHANNEL', 'REACTION']})
 
 
-client.login("OTY0OTU1MzA1ODU3Mzg0NDQ4.YlsKqA.dCqSnZLK4n4Xu4eqpP-AY-gKz6A");
+client.login(process.env.token);
 
 const fs = require('fs');
 
