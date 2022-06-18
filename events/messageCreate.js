@@ -10,9 +10,9 @@ module.exports = {
             var testo = message.content;
             message.delete()
             var embed = new Discord.MessageEmbed()
-                .setTitle(":x: **INFRAZIONE**")
+                .setTitle(":x: **INFRAZIONE**, motivo:")
                 .setColor("RED")
-                .setDescription(`MOTIVO DELL INFREZIONE: **\n${testo}**`)
+                .setDescription(`**\n${testo}**`)
                 .addField(':warning: non puoi mandare link nel server stai piu attento la prossima volta 🙂')
                 .setTimestamp()
         
