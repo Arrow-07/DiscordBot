@@ -9,7 +9,7 @@ module.exports = {
     
         if(interaction.customId.startsWith('b2')){
             interaction.member.roles.remove("959153371904884817")
-            interaction.reply({content: 'NOOO! HAI RIFIUTATO LE REGOLE E ORA NON FAI PARTE DEL SERVER, SPERIAMO DI RINCONTRARCI', ephemeral: true})
+            interaction.reply({content: 'CHE PECCATO, HAI RIFIUTATO LE REGOLE DEL SERVER, SPERIAMO DI RINCONTRARCI PRESTO', ephemeral: true})
         }
       
 //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
