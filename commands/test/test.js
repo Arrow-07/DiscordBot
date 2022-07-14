@@ -6,7 +6,7 @@ module.exports = {
     description: "comando di test",
     aliases: ["prova", "ping"],
     onlyStaff: false,
-    execute(message, args, member){     
+    async execute(message, args, member){     
         
             const {createCanvas, loadImage} = require("canvas")
             let canvas = await createCanvas(1700, 600)
