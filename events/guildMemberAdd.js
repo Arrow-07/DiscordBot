@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 module.exports = {
     name: "guildMemberAdd",
     async execute(member){     
@@ -22,7 +23,7 @@ module.exports = {
         //mandare un canvas    
             let channel = client.channels.cache.get("996715018957627444");
        
-            let attachment = new Discord.MessageAttachment(canvas.toBuffer(), "canvasHello.png")
+            let attachment = new Discord.MessageAttachment(canvas.toBuffer(), "canvas.png")
             
             channel.send({files: [attachment]})
     }
