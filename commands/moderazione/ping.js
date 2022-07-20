@@ -14,7 +14,7 @@ module.exports = {
             .setColor('RED') 
             message.channel.send({embeds: [embed]})
        }
-       else if(60 > ping < 120 ){
+       else if(59 < ping < 120 ){
         var embed1 = new Discord.MessageEmbed()
             .setTitle("Ping del bot")
             .setDescription("Ecco la latenza del bot")
