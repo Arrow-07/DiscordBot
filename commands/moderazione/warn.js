@@ -8,7 +8,7 @@ module.exports = {
         const idRuoloWarn1 = '999379652932018256'
         const idRuoloWarn2 = '999382552190144552'
         let utente = message.mentions.members.first();
-    if (!message.member.permissions.has('959156448422662174')) {
+    if (!message.member.roles.has('959156448422662174')) {
         return message.channel.send('Non hai il permesso');
     }
     if (!utente) {
