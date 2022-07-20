@@ -6,7 +6,7 @@ module.exports = {
     onlyStaff: false,
     execute(message, args){
         var ping = client.ws.ping
-       if(ping > 119){
+       if(ping > 10){
         var embed = new Discord.MessageEmbed()
             .setTitle("Ping del bot")
             .setDescription("Ecco la latenza del bot")
