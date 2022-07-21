@@ -4,7 +4,7 @@ module.exports = {
     description: "warn",
     aliases: [],
     onlyStaff: false,
-    execute(message, args){
+    execute(message, args, member){
         const idRuoloWarn1 = '999379652932018256'
         const idRuoloWarn2 = '999382552190144552'
         let utente = message.mentions.members.first();
